@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Đăng Kí</title>
+	<link rel="stylesheet" type="text/css" href="css/formDangKi.css">
+</head>
+<body>
+	<h1>Form Đăng Kí</h1>
+	<form name="formdangki" action="#" class="form-dangki">
+		<div class="input-control">
+			<div class="text">
+				Ho va Ten
+			</div>
+			<div class="input">
+				<input type="text" name="name" id="name">
+				<span class="erro" id="erroName"></span>
+			</div>
+		</div>
+		<div class="input-control">
+			<div class="text">
+				Gioi Tinh
+			</div>
+			<div class="input" id="gioitinh" name="gioitinh">
+				<input type="radio" name="gender" id="nam">Nam
+				<input type="radio" name="gender" id="nu">Nu
+				<span class="erro" id="erroGioiTinh"></span>
+			</div>
+		</div>
+		<div class="input-control">
+			<div class="text">
+				Ngay Sinh
+			</div>
+			<div class="input">
+				<input type="date" name="ngaysinh" id="ngaysinh">
+				<span class="erro" id="erroNgaySinh"></span>
+			</div>
+		</div>
+		<div class="input-control">
+			<div class="text">
+				Tinh Thanh
+			</div>
+			<div class="input" name="city" id="city">
+				<select>
+					<option value="quang binh">Quang Binh</option>
+					<option value="quang tri">Quang Tri</option>
+					<option value="hue">Hue</option>
+					<option value="da nang">Da Nang</option>
+					<option value="quang nam">Quang Nam</option>
+					<option value="quang ngai">Quang Ngai</option>
+					<option value="binh dinh">Binh Dinh</option>
+				</select>
+				<span class="erro" id="erroCity"></span>
+			</div>
+		</div>
+		<div class="input-control">
+			<input type="button" name="submit" value="Submit" onclick = "move()">
+		</div>
+		<p id="printContent"></p>
+	</form>	
+	<script type="text/javascript" src="js/formdangky.js"></script>
+
+</body>
+</html>
